@@ -1,7 +1,7 @@
 import Inicio from '../inicio';
 import Menu from '../menu/menu';
 
-function Economia() {
+function Economía() {
   return (
     <div className="App">
      <Inicio />
@@ -11,4 +11,4 @@ function Economia() {
   );
 }
 
-export default Economia;
+export default Economía;

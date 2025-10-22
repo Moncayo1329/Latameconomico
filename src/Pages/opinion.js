@@ -1,7 +1,7 @@
 import Inicio from '../inicio';
 import Menu from '../menu/menu';
 
-function Opinion() {
+function Opinión() {
   return (
     <div className="App">
      <Inicio />
@@ -11,4 +11,4 @@ function Opinion() {
   );
 }
 
-export default Opinion;
+export default Opinión;

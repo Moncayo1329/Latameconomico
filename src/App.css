@@ -24,6 +24,13 @@
   color: white;
 }
 
+hr {
+  border: 2px solid #121111; /* grosor y color */
+  width: 65%;             /* ancho de la línea */
+  margin: 10px auto;      /* centrado y espacio arriba/abajo */
+}
+
+
 
 h1{
     color: black;

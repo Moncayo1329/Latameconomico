@@ -4,9 +4,9 @@ import { createRoot } from "react-dom/client";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Economia from './Pages/economia';
+import Economía from './Pages/economia';
 import App from './App';
-import Opinion from './Pages/opinion';
+import Opinión from './Pages/opinion';
 import Nosotros from './Pages/nosotros';
 
 
@@ -15,8 +15,8 @@ function Main() {
 		<BrowserRouter>
 			<Routes>
         <Route path="/" element={<App />} />
-				<Route path="/economia" element={<Economia />} />
-				<Route path="/opinion" element={<Opinion />} />
+				<Route path="/economía" element={<Economía />} />
+				<Route path="/opinión" element={<Opinión />} />
 				<Route path="/Nosotros" element={<Nosotros />} />
 			</Routes>
 		</BrowserRouter>
