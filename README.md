@@ -13,4 +13,4 @@ Our goal is to become the best journal that everyone can read easily—from youn
 ## Support us
 Support us by reading our papers, and we always welcome your feedback to keep improving.
 
-#Good economics leads to a better life.
+# Good economics leads to a better life.
