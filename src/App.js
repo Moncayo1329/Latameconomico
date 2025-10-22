@@ -1,15 +1,15 @@
-import Menu from './menu/menu';
-import './App.css';
+import Inicio from "./inicio.js";
+import Menu from "./menu/menu";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="text-black py-5">
-      <h1 className='text-center'>LATAM ECONÓMICO</h1>
+    <div>
+      <Inicio />
       <Menu />
-      </header>
     </div>
   );
 }
 
 export default App;
+

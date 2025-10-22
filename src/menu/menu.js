@@ -1,26 +1,21 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-function Menu(){
-return (
-    <div>
-        <nav className=" p-3">
-            <ul className="nav justify-content-center">
-                <li className="nav-item">
-                <a href="#" className="nav-link text-black">Economía</a>
-                </li>
-        
-             <li className="nav-item">
-          <a href="#" className="nav-link text-black">Opinión</a>
+function Menu() {
+  return (
+    <nav className="p-3">
+      <ul className="nav justify-content-center">
+        <li className="nav-item">
+          <Link to="/economia" className="nav-link text-black">Economía</Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-black">Nosotros</a>
-</li>
-          </ul>
-        </nav>
-    </div>
-);
-
+          <Link to="/opinion" className="nav-link text-black">Opinión</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/nosotros" className="nav-link text-black">Nosotros</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
-
 
 export default Menu;
