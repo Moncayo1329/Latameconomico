@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Economía from './Pages/economia';
+import Post from './Pages/Post';
 import App from './App';
 import Opinión from './Pages/opinion';
 import Nosotros from './Pages/nosotros';
@@ -16,6 +17,7 @@ function Main() {
 			<Routes>
         <Route path="/" element={<App />} />
 				<Route path="/economía" element={<Economía />} />
+				<Route path="/economia/:slug" element={<Post />} />
 				<Route path="/opinión" element={<Opinión />} />
 				<Route path="/Nosotros" element={<Nosotros />} />
 			</Routes>
