@@ -38,19 +38,26 @@ function Economia() {
           <p>Cargando posts...</p>
         ) : (
           posts.map((post) => {
-            // Mostramos solo las primeras ~200 letras como preview
-            const preview = post.content.split('\n').slice(0, 5).join(' ').slice(0, 200) + '...';
+              const lines = post.content.split('\n').filter(line => line.trim() !== '');
+  const title = lines[0]?.trim();        // primera línea → título
+  const date = lines[1]?.trim();         // segunda línea → fecha
+  const description = lines.slice(2).join(' ').slice(0, 250) + '...'; // resto → descripción
 
             return (
-               <article key={post.path} className="mb-7 border-b pb-2">
-                <ReactMarkdown>{preview}</ReactMarkdown>
-                <Link
-                  to={`/economia/${post.slug}`}
-                  className="text-blue-600 hover:underline font-medium"
-                >
-                  Leer más →
-                </Link>
-              </article>
+               <Link
+                key={post.path}
+                to={`/economia/${post.slug}`}
+                className="block mb-7 border-b pb-4 hover:bg-gray-50 transition rounded-lg p-4"
+              >
+                <h3 className="text-2xl font-semibold mb-1 text-blue-700 hover:underline">
+        {title}
+      </h3>
+      <p className="text-sm text-gray-500 mb-3">{date}</p>
+
+      <div className="text-gray-700 leading-relaxed">
+        <ReactMarkdown>{description}</ReactMarkdown>
+      </div>
+    </Link>
             );
           })
         )}

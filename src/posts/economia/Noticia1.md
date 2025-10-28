@@ -1,6 +1,14 @@
-# Whatever it takes
 
-Creamos este medio dedicado a la **economía latinoamericana**, ofreciendo noticias, opiniones y perspectivas diversas.  
- A diferencia de los medios tradicionales, buscamos ser **independientes y críticos**, siempre en la búsqueda de la **verdad**. 
+ Whatever it takes
 
-###### Oct.27,2025
+  Oct.27,2025
+
+
+Creamos este medio dedicado a la economía latinoamericana
+ A diferencia de los medios tradicionales
+
+peoieoeoeoeoeoeocjeifjeodjeodjeodjeodje
+jiedjeidjeidjeidjeidjde
+dijeidjeidjeidjediejdiejded
+djoeiodjeidjeidjeidjeidjeid
+ijdeidjeidjeidjeidjeidjeijiedjiejd
