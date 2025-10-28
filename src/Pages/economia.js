@@ -33,8 +33,7 @@ function Economia() {
 
       <div className="p-6">
         <h2 className="text-2xl font-bold mb-4">Economía</h2>
-        <hr  />
-
+       <hr  />
         {posts.length === 0 ? (
           <p>Cargando posts...</p>
         ) : (
@@ -43,7 +42,7 @@ function Economia() {
             const preview = post.content.split('\n').slice(0, 5).join(' ').slice(0, 200) + '...';
 
             return (
-              <article key={post.path} className="mb-10 border-b pb-4">
+               <article key={post.path} className="mb-7 border-b pb-2">
                 <ReactMarkdown>{preview}</ReactMarkdown>
                 <Link
                   to={`/economia/${post.slug}`}
