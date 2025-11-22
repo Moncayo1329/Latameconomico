@@ -35,7 +35,7 @@ function Economia() {
         <h2 className="text-2xl font-bold mb-4">Economía</h2>
        <hr  />
         {posts.length === 0 ? (
-          <p>Cargando posts...</p>
+          <p>Cargando posts.</p>
         ) : (
           posts.map((post) => {
               const lines = post.content.split('\n').filter(line => line.trim() !== '');
