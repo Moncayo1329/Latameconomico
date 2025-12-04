@@ -40,7 +40,7 @@ function Economia() {
       {posts.map((p) => (
         <div key={p.slug}>
           <h2>{p.slug}</h2>
-          <p>{p.description}</p>
+          <p>{p.description}</p> 
           <ReactMarkdown>{p.content}</ReactMarkdown>
         </div>
       ))}

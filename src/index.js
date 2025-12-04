@@ -20,6 +20,7 @@ function Main() {
 				<Route path="/economia/:slug" element={<Post />} />
 				<Route path="/opinión" element={<Opinión />} />
 				<Route path="/Nosotros" element={<Nosotros />} />
+				<Route path="/articulo/:category/:file" element={<Article />} />
 			</Routes>
 		</BrowserRouter>
 	);
