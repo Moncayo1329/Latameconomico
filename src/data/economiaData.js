@@ -7,7 +7,7 @@ export const Economianews = [
     slug: "whatever-it-takes",
     category: "economia",
     image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
-    markdownPath:"../posts/economia/Noticia1.md"
+    markdownPath:"Noticia1.md"
 
     }
 
