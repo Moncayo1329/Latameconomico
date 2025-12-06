@@ -13,13 +13,18 @@ function Economia() {
       const loadedPosts = await Promise.all(
         Economianews.map(async(post)=> {
 
+          let content = '';
+          try {
+
           const url = require(`../posts/economia/${post.markdownPath}`);
           const res = await fetch(url);
           const text = await res.text();
-
+          } catch (err) {
+            console.warn(`No se pudo cargar ${post.markdownPath}`, err);
+          }
        return {
             ...post,
-            content: text,
+            content,
           };
         })
       );
@@ -35,16 +40,41 @@ function Economia() {
     <div className="App">
       <Inicio />
       <Menu />
+      <section className='economia-news container mt-5'>
+     <h1 className='mb-4'>Economia</h1>
 
-      {/* Muestra los posts si quieres */}
-      {posts.map((p) => (
-        <div key={p.slug}>
-          <h2>{p.slug}</h2>
-          <p>{p.description}</p> 
-          <ReactMarkdown>{p.content}</ReactMarkdown>
+     <div className='row'>
+      {posts.map((post) => (
+      <div className='col-md-6 col-lg-4 mb-4' key={post.id}>
+      <div className='card h-100 shadow-sm'> 
+      {post.image && (
+     <img
+     src={post.image}
+    className="card-img-top"
+    alt={post.title}
+    style={{ height: '200px', objectFit: 'cover' }}
+
+     />
+      )}
+
+    <div className='card-body d-flex flex-column'>
+    <h5 className='card-title'>{post.title}</h5>
+    <p className='text-muted small mb-2'>
+     <i className="bi bi-calendar3"></i> {post.date}
+    </p>
+        
+        
+  <p className="card-text flex-grow-1">{post.description}</p>
+                  {/* Opcional: enlace para leer más */}
+                  <a href={`/economia/${post.slug}`} className="btn btn-outline-primary mt-auto">
+                    Leer más →
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-
+      </section>
     </div>
   );
 }
