@@ -1,9 +1,9 @@
 // src/Pages/Economia.jsx
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Inicio from '../inicio';
 import Menu from '../menu/menu';
-import ReactMarkdown from 'react-markdown';
-import  Economianews  from '../data/economiaData';
+import { Economianews }  from '../data/economiaData';
 
 function Economia() {
   const [posts, setPosts] = useState([]);
@@ -18,7 +18,7 @@ function Economia() {
 
           const url = require(`../posts/economia/${post.markdownPath}`);
           const res = await fetch(url);
-          const text = await res.text();
+          content = await res.text();
           } catch (err) {
             console.warn(`No se pudo cargar ${post.markdownPath}`, err);
           }
@@ -66,9 +66,9 @@ function Economia() {
         
   <p className="card-text flex-grow-1">{post.description}</p>
                   {/* Opcional: enlace para leer más */}
-                  <a href={`/economia/${post.slug}`} className="btn btn-outline-primary mt-auto">
-                    Leer más →
-                  </a>
+                  <Link to={`/economia/${post.slug}`} className="btn btn-outline-primary mt-auto">
+  Leer más →
+</Link>
                 </div>
               </div>
             </div>

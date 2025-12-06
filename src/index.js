@@ -9,6 +9,7 @@ import Post from './Pages/Post';
 import App from './App';
 import Opinión from './Pages/opinion';
 import Nosotros from './Pages/nosotros';
+import NoticiaDetalle from './News/Noticia';
 
 
 function Main() {
@@ -20,6 +21,7 @@ function Main() {
 				<Route path="/economia/:slug" element={<Post />} />
 				<Route path="/opinión" element={<Opinión />} />
 				<Route path="/Nosotros" element={<Nosotros />} />
+				<Route path="/economia/:slug" element={<NoticiaDetalle />} /> {/* ← Ruta dinámica */}
 			</Routes>
 		</BrowserRouter>
 	);

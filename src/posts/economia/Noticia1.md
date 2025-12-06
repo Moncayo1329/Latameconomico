@@ -1,6 +1,15 @@
+# Whatever it takes
 
+Este es el contenido completo de la noticia.
 
-Creamos este medio dedicado a la economía latinoamericana
- A diferencia de los medios tradicionales
+Podemos poner **negritas**, listas:
 
+- Punto 1
+- Punto 2
+- Punto 3
 
+Incluso imágenes:
+
+![Gráfico economía](https://example.com/grafico.png)
+
+¡Todo se renderiza perfectamente!
